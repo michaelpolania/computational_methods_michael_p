@@ -19,7 +19,7 @@ parser.add_argument('g', type= float, help= 'The gravitational acceleration cons
 args = parser.parse_args()
 
 #Defines a function to calculate the time for an object to reach the ground in a gravational field, given height above the ground
-def time (h, g):
+def calc_time (h, g):
     t = ((2*h)/g)**.5 #Equation to solve for time
     print(f'The ball takes {t:.2f} seconds to reach the ground.') #Prints the time up to two sig figs
     return t
