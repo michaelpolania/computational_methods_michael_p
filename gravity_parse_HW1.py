@@ -25,4 +25,4 @@ def calc_time (h, g):
     return t
 
 #Calls the function based on the height and gravitational acceleration the user inputs when running the .py file on the terminal
-time(args.h, args.g)
+calc_time(args.h, args.g)
