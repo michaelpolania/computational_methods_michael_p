@@ -24,10 +24,9 @@ G = const.G.value #Newton's Universal Law of Gravitation constant
 def func(x):
     return (G*M)/(x**2) - (G*m)/((R-x)**2) - x * omega**2
 
-#Defines a function to calculate the derivative of the equation we are trying to solve using the central differences method
+#Defines a function to represent the derivative of the equation we are solving
 def deriv(x):
-    h = 10**-5
-    return (func(x + h/2) - func(x - h/2 ))/(h)
+    return (-2*G*M)/(x**3) - (2*G*m)/((R-x)**3) - omega**2
 
 #Defines a function to calculate the slope of the secant line
 def secant(x_1, x_2):
@@ -120,5 +119,4 @@ ax2.legend()
 
 
 plt.show()
-
 
