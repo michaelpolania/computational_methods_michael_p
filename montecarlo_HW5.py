@@ -216,7 +216,7 @@ def one_photon_sun(init_pos_r):
             del_r = np.abs(del_r)
 
         #Calculates new position r    
-        new_R = r[-1] + distance * np.cos(theta)
+        new_R = r[-1] + del_r
         
         r.append(new_R)
 
