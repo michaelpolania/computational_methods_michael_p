@@ -17,7 +17,7 @@ python montecarlo_HW5.py 1000 150 0 0 0 100
 #Creates parser
 parser = argparse.ArgumentParser()
 
-#Creates arguments for a, b, num_points, N, and increment_step
+#Creates arguments for slab_width, mean free path, initial x pos, initial y pos, initial r pos, and the number of photons for the three simulations
 parser.add_argument('slab_width', type= int, help= 'The slab width the user wants to consider in m.')
 parser.add_argument('l', type= int, help= 'The mean free path in m.')
 parser.add_argument('init_pos_x', type= int, help= 'The initial x position of the photon in m.')
