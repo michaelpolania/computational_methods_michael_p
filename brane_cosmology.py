@@ -1,8 +1,7 @@
 import numpy as np
 import sympy as sp
-import matplotlib.pyplot as plt
-import math
 from sympy import var
+import matplotlib.pyplot as plt
 
 '''
 Please refer to the readme file for the relevant
@@ -18,14 +17,14 @@ A_1 = input("Enter initial area condition A(t_0_A): ")
 A_2 = input("Enter initial area derivative condition A_dot(t_0_A): ")
 
 #Defines the energy density and momentum of the brane constants, as input from the user
-p_1 = float(input("Input the momentum of the brane along the extra dimension 1: "))
-p_2 = float(input("Input the momentum of the brane along the extra dimension 2: "))
-T = float(input("Input the energy density of the brane: "))
+p_1 = float(input("Input the momentum of the brane along the extra dimension 1 (p_1): "))
+p_2 = float(input("Input the momentum of the brane along the extra dimension 2 (p_2): "))
+T = float(input("Input the energy density of the brane (T): "))
 
 #Defines the momentum of the light ray along one of the brane dimensions and the two extra dimensions, as input from the user
-a_1 = float(input("Input the momentum of the light ray along one of the brane dimensions: "))
-a_4 = float(input("Input the momentum of the light ray along the extra dimension 1: "))
-a_5 = float(input("Input the momentum of the light ray along the extra dimension 2: "))
+a_1 = float(input("Input the momentum of the light ray along one of the brane dimensions (a_1): "))
+a_4 = float(input("Input the momentum of the light ray along the extra dimension 1 (a_4): "))
+a_5 = float(input("Input the momentum of the light ray along the extra dimension 2 (a_5): "))
 
 #Sets the initial positions for the brane at time t_ini; Y_1_h_1(t_ini), Y_1_h_2(t_ini), Y_2_h_1(t_ini), and Y_2_h_2(t_ini)
 brane_initial_positions = [0, 0, 0, 0]
