@@ -5,8 +5,8 @@ import math
 from sympy import var
 
 '''
-Please refer to the readme file for more
-details on the specifics of the program.
+Please refer to the readme file for the relevant
+background and summary of the program.
 '''
 
 #Asks the user to input the initial conditions for V(t) and A(t)
